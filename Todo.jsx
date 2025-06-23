@@ -3,9 +3,7 @@ import { useState } from "react";
 const Todo = () => {
   const [todos, setTodos] = useState([]);
   const [todo, setTodo] = useState({ title: "", desc: "" });
-  const handlesubmit = () => {
-    setTodo();
-  };
+
   const handleRemove = (index) => {
     setTodos(todos.filter((element, i) => i !== index));
   };
